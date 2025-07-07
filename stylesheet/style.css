@@ -1,0 +1,68 @@
+/* Estiliza toda a página sem exceção */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estiliza o corpo da página */
+body                                                                            
+{
+    height: 100vh;
+    padding: 60px;  /* Adiciona um preenchimento ao corpo da página para que a posição de X e Y do ".container" não seja 0 com relação a tela */
+    background-image: linear-gradient(#17181a, #112d4e);
+}
+
+/* Estiliza o bloco principal da página */
+.container
+{
+    position: relative;
+    height: 100%;
+    border-radius: 90px;
+    background: #2e3033;
+}
+
+/* Estiliza o cabeçalho da página */
+header
+{
+    position: absolute; /* O cabeçalho tem posição absoluta e nunca sai do início do bloco principal da página */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px 5%; /* Adiciona um preenchimento no eixo X e Y do cabeçalho para posiciona-lo melhor com relação ao bloco principal da página */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10; /* Coloca o cabeçalho numa camada superior para impedir outros conteúdos de sobrepor o cabeçalho */
+}
+
+/* Estiliza o nome principal da página */
+.pagName
+{
+    font-size: 30px;
+    font-weight: 600;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estiliza os conteúdos ancoras associados a "navBar" */
+.navBar a
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-left: 60px;
+
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+}
+
+/* Estiliza os conteúdos ancoras associados a "navBar" quando o mouse está sobre ou o menu está ativo */
+.navBar a:hover, .navBar a.active { border-color: #ffffff;}

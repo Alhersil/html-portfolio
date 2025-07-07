@@ -1,0 +1,48 @@
+/* Estiliza o bloco inicial do portfolio */
+.portfolioBlock
+{
+    position: absolute;
+    top: 10%;
+    left: 0;
+
+    width: 100%;
+    height: 90%;
+    padding-left: 5%;
+
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-template-rows: 75% 80% 120%;
+
+    overflow: auto;
+    scrollbar-width: none;
+
+    color: #ffffff;
+}
+
+/* Estiliza o primeiro bloco do portfolio */
+.portfolioBlock-A1, .portfolioBlock-B1, .portfolioBlock-C1
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolioBlock-A1 p, .portfolioBlock-B1 p, .portfolioBlock-C1 p { padding: 1% 0% 0% 0%;}
+.portfolioBlock-A1 ul, .portfolioBlock-B1 ul, .portfolioBlock-C1 ul { padding: 2% 0% 0% 6%; }
+.portfolioBlock-A1 li, .portfolioBlock-B1 li, .portfolioBlock-C1 li { margin-top: 1%; }
+
+/* Estiliza o segundo bloco do portfolio */
+.portfolioBlock-A2, .portfolioBlock-B2, .portfolioBlock-C2
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.portfolioBlock-A2 img, .portfolioBlock-B2 img, .portfolioBlock-C2 img { height: 50vh; }

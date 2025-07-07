@@ -1,0 +1,92 @@
+/* Estiliza o bloco inicial do index */
+.homeBlock
+{
+    position: absolute;
+    top: 10%;
+    left: 0;
+
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    padding: 0px 5% 0px 5%;
+    align-content: center;
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+/* Estiliza o primeiro bloco da página inicial */
+.homeBlock-A
+{
+    width: 55%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeBlock-A h1
+{
+    font-size: 36px;
+    line-height: 1;
+}
+
+.homeBlock-A h2 { font-size: 48px; }
+.homeBlock-A h3 { font-size: 24px; }
+
+.homeBlock-A span
+{
+    padding: 8px;
+    color: #3F72AF;
+}
+
+.homeBlock-A p
+{
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+}
+
+.buttonDetail
+{
+    width: 60px;
+    height: 60px;
+
+    padding: 4px;
+    border-radius: 8px;
+    border-style: none;
+
+    background: transparent;
+    transition: background, 0.3s, ease-out ;
+
+    cursor: pointer;
+}
+
+.buttonDetail img
+{
+    width: 52px;
+    height: auto;
+
+    display: block;
+    object-fit: contain;    
+}
+
+.buttonDetail:hover { background: #ffffff; }
+
+/* Estiliza o segundo bloco da página inicial */
+.homeBlock-B
+{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeBlock-B img
+{
+    width: auto;
+    height: 70%;
+}
